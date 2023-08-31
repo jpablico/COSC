@@ -1,0 +1,116 @@
+===========================================================================
+ Approach for Doing Problem #1 -- Restaurant Bill 
+===========================================================================
+Write a program that computes the tax and tip on a restaurant bill for a patron with a $85.67 meal charge. The tax should be 6.75 percent of the meal cost. The tip should be 20 percent of the total after adding the tax. 
+
+Display the meal cost, tax amount, tip amount, and total bill
+on the screen.
+--------------------------------------------------------------------------
+READ the PROBLEM DESCRIPTION
+MAKE SURE YOU UNDERSTAND WHAT IS REQUIRED
+
+All computer programs follow a sequential path from INPUT to PROCESSING
+to OUTPUT. So, my main() function will have three sections of instructions:
+INPUT - PROCESS - OUTPUT. I always begin with this skeleton for main():
+
+int main()
+{
+//INPUT:
+
+//PROCESS:
+
+//OUTPUT:
+
+} 
+
+NEXT, DEVELOP ALGORITHM as a SERIES of STEPS
+
+-- get meal cost 
+-- calculate tax
+-- calculate tip
+-- calculate total bill
+-- display cost, tax, tip, & total
+
+NOW, expand each step into a Coding Comment in main().
+
+int main()
+{
+//INPUT:
+// declare constants -- which are variables
+// whose values cannot be changed.
+// declare variable as 'const' & 
+// initialize with literal values 
+
+
+// Store the meal cost.
+// declare variable & initialize with literal value
+  
+
+
+//PROCESS:
+// Calculate and store the tax amount.
+// declare variable & initialize with
+// result of expression: (cost * TAX)           
+   double tax = cost * TAX;
+
+
+// Calculate and store the tip amount.
+  
+
+
+// Calculate and store the total bill.
+
+
+
+//OUTPUT:
+// Display the meal cost, tax amount, tip
+// amount, and total bill   
+
+
+
+return 0;
+} 
+
+
+FINALLY, Write the C++ Code
+
+int main()
+{
+//INPUT:
+// declare constants -- which are variables
+// whose values cannot be changed.
+// declare variable as 'const' & 
+// initialize with literal values 
+   const double TAX = 0.0675;
+   ...
+
+
+// Store the meal cost.
+// declare variable & initialize with literal value
+   double cost = 85.67;
+
+//PROCESS:
+// Calculate and store the tax amount.
+// declare variable & initialize with
+// result of expression: (cost * TAX)           
+   double tax = cost * TAX;
+
+// Calculate and store the tip amount.
+   ...
+
+
+// Calculate and store the total bill.
+   ...
+
+
+//OUTPUT:
+// Display the meal cost, tax amount, tip
+// amount, and total bill   
+
+   ...
+
+	return 0;
+} 
+##########################################################################
+NOTE: WRITE the remaining C++ Statements. 
+##########################################################################

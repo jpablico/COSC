@@ -1,0 +1,19 @@
+=======================================================================
+ PSET_2 -  PROGRAMMING SET PROBLEM DESCRIPTION
+=======================================================================
+
+Write a program that computes the tax and tip on a restaurant bill for a patron with a $85.67 meal charge. The tax should be 6.75 percent of the meal cost. The tip should be 20 percent of the total after adding the tax. 
+
+Display the meal cost, tax amount, tip amount, and total bill
+on the screen.
+
+TEST CASE: Demonstrate your program by displaying your results.
+                                          
+
+=======================================================================
+Submit your assignment using the format in the 
+ (1) "PROGRAMMING SET SUBMISSION FORMAT" and the
+ (2) "PROGRAMMING SET SUBMISSION DOCUMENT TEMPLATE" which can be
+ Downloaded from the 'COURSE INFORMATION' Module.
+
+
