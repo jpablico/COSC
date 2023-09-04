@@ -4,7 +4,6 @@ using namespace std;
 
 int main() 
 {
-    
     double meal;
     double total;
     double tax = 0.0675;
