@@ -13,9 +13,10 @@ int main()
 	std::cout << "\n";
 
 	assessmentValue =  actualValue * 0.6;
-	propertyTax = (assessmentValue / 100) * .075;
+	propertyTax = (assessmentValue / 100) * 0.75;
 
-	std::cout << "Assessment Value: "<< cout.precision(2) << fixed << assessmentValue << std::endl;
-	std::cout << "Property Tax: $" << cout.precision(2) << fixed << propertyTax << std::endl;
+	std::cout << fixed << cout.precision(2);
+	std::cout << "Assessment Value: $"<< assessmentValue << std::endl;
+	std::cout << "Property Tax: $" << propertyTax << std::endl;
 	return 0;
 }
