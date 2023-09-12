@@ -1,0 +1,76 @@
+=======================================================================
+ PSET_4 -  DESCRIPTION for PROGRAMMING SET 4
+=======================================================================
+
+The monthly payment on a loan may be calculated by the following formula:
+
+		  Rate *(1 + Rate)^N       
+	Payment = ------------------ * L    [note 1]
+                  ((1 + Rate)^N - 1)
+
+Rate is the monthly interest rate--expressed as a decimal value, 
+which is the annual interest rate divided by 12. 
+(12% annual interest would be 1 percent monthly interest.)  [note 2]
+
+N is the number of payments,  and ...
+
+L is the amount of the loan. 
+-------------------------------------------------------------------------
+Note 1:  '^' means exponentiation; a^b means a to the power of b
+         Hint: Use the pow() function in the math Library.
+
+Note 2:  To convert from percent to decimal ...
+         Divide the percent value by 100. 
+-------------------------------------------------------------------------
+=========================================================================
+ EXAMPLE:    APPLYING THE FORMULA
+=========================================================================
+Write the code to compute the Monthly Payment for $10,000 loan 
+for 36 months at 12% APR(Annual Percentage Rate) and present the 
+results in a formatted display as shown: 
+
+	Loan Amount: 		$ 10000.00
+	Annual Interest Rate:	     12.00%
+	Number of Payments:             36
+	Monthly Payment:        $   332.14
+        Amount Paid Back:       $ 11957.15
+        Interest Paid:          $  1957.15
+
+==========================================================================
+   PROGRAM REQUIREMENTS for PSET_4
+==========================================================================
+Write a program to compute the monthly payment on a loan.
+
+(1) The program should compute:
+    (a) Monthly Payment
+    (b) Amount Paid Back
+    (c) Interest Paid 
+                                           
+(2) The Loan Amount, Number of Payments, & APR should be obtained
+    from the keyboard and validated.
+
+(3) The output results should be presented as a formatted display
+    as shown in the example above. 
+
+--------------------------------------------------------------------------
+ TEST your Program for the following problem:
+
+ You just bought a cool Red F150 Truck for $40,000.
+ Compute your monthly payments for the financing options:
+   (1) 60 months @ 4.20% APR*
+   (2) 48 months @ 4.20% APR
+   (3) 36 months @ 4.54% APR
+
+* Current Auto Loan Rates at Bankrate.com
+
+WHICH OPTION IS THE "BEST DEAL" ??  ... and  WHY ??
+
+=======================================================================
+'Paste' your Console Dialog & Results from the Compiler Output Window
+and 'Paste' your Source Code from the Compiler Source Code Window into
+the "SUBMISSION TEMPLATE for PROGRAMMING SET 4" -- and SUBMIT into 
+CANVAS by the Due Date.
+
+You can Download a "SUBMISSION TEMPLATE for PROGRAMMING SET 4" from the WEEK_04 Course Module.
+=======================================================================
+=======================================================================

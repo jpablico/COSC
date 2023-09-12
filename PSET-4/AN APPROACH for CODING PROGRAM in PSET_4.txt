@@ -1,0 +1,114 @@
+***********************************************************************
+  An APPROACH for CODING PROGRAM for  PSET_4
+***********************************************************************
+  PROBLEM STATEMENT
+-----------------------------------------------------------------------
+Write a program that asks the user for input values, then compute the
+monthly payment on a loan, and display as a formatted report.
+ 
+The monthly payment on a loan may be calculated by the following formula:
+
+		  Rate *(1 + Rate)^N       
+	Payment = ------------------ * Loan                     [note 1]
+                  ((1 + Rate)^N - 1)
+
+Rate is the monthly interest rate--expressed as a decimal value, 
+which is the annual interest rate divided by 12.                [note 2]
+(12% annual interest would be 1 percent monthly interest.) 
+ 
+N is the number of payments, and ...
+
+Loan is the amount of the loan. 
+
+note 1:  '^' means exponentiation; a^b means a to the power of b
+         will need to use the pow() function in the math Library.
+
+note 2:  To convert from percent to decimal ...
+         Divide the percent value by 100. 
+------------------------------------------------------------------------
+
+ The program flow is sequential. That is your C++ statements will
+ execute in the order in which you place them in your Source Code.
+ We start by creating our Comment Lines(//) to specify what we are
+ going to do in C++ Statement(s) that follow the Comment. 
+ Each Comment represents a task(s) to be done by a computing device.
+ Now, we can insert the C++ statement(s) for each Comment Line that  
+ implements the associated computing task(s). 
+
+ We will need to Create Console Input Dialogs for obtaining input
+ values for Annual Percentage Rate(APR) for the Loan, amount of
+ the loan, and number of monthly payments.
+
+***********************************************************************
+  PROGRAM PSEUDO CODE
+***********************************************************************
+// PSET_4
+#include <iostream>      // need for console I/O
+#include <cmath>         // need for pow()
+#include <iomanip>       // need for output formatting 
+using namespace std;
+
+int main()
+{
+// Define Constants
+
+//use IPO model for Program Flow   
+//---------------------------------------------------------------------
+// INPUT: Create Console Input Dialogs
+//---------------------------------------------------------------------
+
+// Create Input Dialog for Annual Percentage Rate for the Loan
+
+// Create Input Dialog for the Amount of the Loan 
+
+// Create Input Dialog for the Duration of Loan(years) 
+
+//*** see tutorial on "CREATING A CONSOLE INPUT DIALOG" in CANVAS.
+
+//-------------------------------------------------------------------
+// DO INTERMEDIATE CALCULATIONS
+//-------------------------------------------------------------------
+// we need to create intermediate temporary variables
+// to assist us with our Processing Calculations
+
+//Adjust the Rate to match the monthly payment period.
+
+    Rate = APR /100/ number_monthly_payments_per_year;
+
+//Adjust N to match number of Monthly payments for the Loan duration
+
+    N = yrs * number_of_payments_per_year;
+
+// will need to use the math lib pow function
+// which has the form  pow(b, e) for b^e.
+// many target compilers require that the arguments b & e
+// be primary expressions of type 'double'. 
+
+   double b=(1+Rate)  and   e=(double)N
+
+//--------------------------------------------------------------------
+// PROCESS: Transform Input Data into Output Data (Information).
+//          Allocate Output Variables, Populate Output Variables via
+//          Computations on Input Variables, Store values for later
+//          retreival by subsequent functions.  
+//--------------------------------------------------------------------
+
+// allocate memory for the payment Variabe
+
+// compute value for payment
+
+
+//--------------------------------------------------------------------
+// OUTPUT: Display Console Input Dialog and Output Results
+//         using a formatted display for each Test Case
+//--------------------------------------------------------------------
+
+// Display the results on the Console screen
+
+
+
+
+   
+}//
+
+***********************************************************************
