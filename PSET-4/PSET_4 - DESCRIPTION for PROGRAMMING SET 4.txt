@@ -35,6 +35,7 @@ results in a formatted display as shown:
 	Monthly Payment:        $   332.14
         Amount Paid Back:       $ 11957.15
         Interest Paid:          $  1957.15
+	
 
 ==========================================================================
    PROGRAM REQUIREMENTS for PSET_4
