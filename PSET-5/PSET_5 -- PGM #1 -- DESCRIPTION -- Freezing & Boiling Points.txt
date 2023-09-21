@@ -1,0 +1,34 @@
+/**************************************************************************
+PSET_5 -- PGM #1 -- DESCRIPTION -- Freezing & Boiling Points
+***************************************************************************
+The following table lists the freezing and boiling points of several substances. Write a program that asks the user to enter a temperature and 
+then shows all the substances that will freeze at that temperature and all 
+that will boil at that temperature. 
+
+For example, if the user enters -20 the program should report that water will freeze and oxygen will boil at that temperature. 
+
+---------------------------------------------------------------------------
+------------------------------------------------------------
+Substance 	Freezing Point (°F) 	Boiling Point (°F)
+-------------   -------------------     --------------------
+Ethyl alcohol 		-173 			172
+Mercury 		- 38 			676
+Oxygen 			-362 		       -306
+Water 			  32 			212
+------------------------------------------------------------
+For any given temperature, there may be none, one, or more events that
+could occur. This means that an Exhaustive Search('Brute Force')
+approach is needed to report all events that may occur. Hence, this
+suggests that a sequential series of if-constructs be used to implement
+your program.
+
+**************************************************************************/
+=======================================================================
+'Paste' your Console Dialog & Results from the Compiler Output Window
+and 'Paste' your Source Code from the Compiler Source Code Window into
+the "SUBMISSION TEMPLATE for PROGRAMMING SET 5" -- and SUBMIT into 
+CANVAS by the Due Date.
+
+You can Download a "SUBMISSION TEMPLATE for PROGRAMMING SET 5" from the WEEK_05 Course Module.
+=======================================================================
+=======================================================================
