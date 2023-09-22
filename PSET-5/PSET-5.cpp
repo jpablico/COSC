@@ -7,6 +7,8 @@ using namespace std;
 int main() {
 	string Selection;
 	int temperature;
+	double weight;
+	double height;
 
 	while(Selection != "C") {
 		cout << "Choose program to run: " << endl;
@@ -23,8 +25,38 @@ int main() {
 			if(Selection == "A" || Selection == "a") {
 				cout << "Please enter a temperature in Farenheight ";
 				cin >> temperature; 
-					if(temperature )
-			}
+					if(temperature >= -306) {
+						if(temperature >= 173) {
+							if(temperature >= 212) {
+								if(temperature >= 676) {
+									cout << "Oxygen, Ethyl alcohol, water, and Mercury boils at that temperature." << endl;
+								} else {
+									cout << "Oxygen, Ethyl alcohol, and water boils at that temperature." << endl;
+								}
+							} else {
+								cout << "Oxygen and Ethyl alcohol boils at that temperature." << endl;
+							}
+						} else {
+							cout << "Oxygen boils at that temperature." << endl;
+						}
+					}
+					if(temperature <= -32) {
+						if(temperature <= -38) {
+							if(temperature <= -173) {
+								if(temperature <= -363) {
+									cout << "Water, Mercury, Ethyl alcohol, and Oxygen freezes at that temperature." << endl;
+								} else {
+									cout << "Water, Mercury, and Ethyl alcohol freezes at that temperature." << endl;
+								}
+							} else {
+								cout << "Water and Mercury freezes at that temperature." << endl;
+							}
+						} else {
+							cout << "Water freezes at that temperature." << endl;
+						}
+					} 
+				}
+			
 			else if(Selection == "B" || Selection == "b") {
 				cout << "BMI" << endl;
 			} else if(Selection == "C" || Selection == "c") {
