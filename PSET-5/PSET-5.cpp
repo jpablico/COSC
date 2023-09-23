@@ -61,19 +61,20 @@ int main() {
 			else if(Selection == "B" || Selection == "b") {
 				cout << "Please enter your weight in pounds: ";
 				cin >> weight; 
-				cout << "Please enter your height in inches";
+				cout << "Please enter your height in inches: ";
 				cin >> height;
-
+				cout << endl;
+				
 				BMI = (weight * 703) / (height * height);
 
 				if(BMI >= 18.5 && BMI <=25) {
-					cout << "Optimal Weight";
+					cout << "Optimal Weight" << endl;
 				}
 				else if(BMI <= 18.5) {
-					cout << "Underweight";
+					cout << "Underweight" << endl;
 				}
 				else if(BMI >= 25) {
-					cout << "Overweight";
+					cout << "Overweight" << endl;
 				}
 
 
