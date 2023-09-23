@@ -41,7 +41,7 @@ int main() {
 							cout << "Oxygen boils at that temperature." << endl;
 						}
 					}
-					if(temperature <= -32) {
+					if(temperature <= 32) {
 						if(temperature <= -38) {
 							if(temperature <= -173) {
 								if(temperature <= -363) {
@@ -64,7 +64,7 @@ int main() {
 				cout << "Please enter your height in inches: ";
 				cin >> height;
 				cout << endl;
-				
+
 				BMI = (weight * 703) / (height * height);
 
 				if(BMI >= 18.5 && BMI <=25) {
