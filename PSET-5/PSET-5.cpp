@@ -9,6 +9,7 @@ int main() {
 	int temperature;
 	double weight;
 	double height;
+	double BMI;
 
 	while(Selection != "C") {
 		cout << "Choose program to run: " << endl;
@@ -62,7 +63,20 @@ int main() {
 				cin >> weight; 
 				cout << "Please enter your height in inches";
 				cin >> height;
-				
+
+				BMI = (weight * 703) / (height * height);
+
+				if(BMI >= 18.5 && BMI <=25) {
+					cout << "Optimal Weight";
+				}
+				else if(BMI <= 18.5) {
+					cout << "Underweight";
+				}
+				else if(BMI >= 25) {
+					cout << "Overweight";
+				}
+
+
 			} else if(Selection == "C" || Selection == "c") {
 				Selection = "C";
 			}
