@@ -58,7 +58,11 @@ int main() {
 				}
 			
 			else if(Selection == "B" || Selection == "b") {
-				cout << "BMI" << endl;
+				cout << "Please enter your weight in pounds: ";
+				cin >> weight; 
+				cout << "Please enter your height in inches";
+				cin >> height;
+				
 			} else if(Selection == "C" || Selection == "c") {
 				Selection = "C";
 			}
