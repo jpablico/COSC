@@ -1,0 +1,303 @@
+ //***************************************************************
+//EXAMPLE: Menu Driven Programming using switch
+/****************************************************************
+The Speed of Sound
+The following table shows the approximate speed of sound in
+air, water, and steel.
+Medium		 Speed
+Air		1,100 feet per second
+Water		4,900 feet per second
+Steel		6,400 feet per second
+Write a program that displays a menu allowing the user to select
+air, water, or steel. After the user has made a selection, he or
+she should be asked to enter the distance a sound wave will travel
+in the selected medium. The program will then display the amount
+of time it will take. (Round the answer to four decimal places.)
+
+Input Validation: Check that the user has selected one of the available choices from the
+menu. Do not accept distances less than 0.
+*****************************************************************/
+//first, we define our named constants
+// Constants for speeds (feet per second)
+const double AIR   =  1100;
+const double WATER =  4900;
+const double STEEL = 16400;
+
+// Constants for menu choices
+const int AIR_CHOICE   = 1;
+const int WATER_CHOICE = 2;
+const int STEEL_CHOICE = 3;
+
+//declare & initialize input variables
+int choice(0); 			// To hold a menu choice
+double distance(0);		// To hold the distance
+double speed(0);		// To hold the speed
+
+//declare & initialize output variables
+double time(0);			// To hold the time
+
+//at this point, it is desirable get and validate a value
+//for the distance before we enter any 'switch' construct.
+//create boolean flag for validation loop
+bool boolVar(true);
+while( boolVar )
+{
+	cout << "\nEnter value for distance: ";
+	cin  >> distance;
+
+	//check distance for valid value
+	//set boolVar to 'false' to exit the loop
+	if( distance > 0 )    boolVar=false;	 
+}
+
+//next, we construct a menu which creates a visual display
+//of an association between the strings used to describe
+//the medium and a numerical integer constants that equate
+//to the medium. These integer equivalents will permit us
+//to use a switch for our Selection Construct.
+
+// Display the menu of choices.
+cout << "Select a medium:\n"
+	 << "1. Air\n"
+	 << "2. Water\n"
+	 << "3. Steel\n\n";
+
+// get and validate value for choice
+// it is a Best Practice to always enter a switch with a
+// valid value for the argument and NOT use the switch
+// construct for input validation.
+boolVar=true;
+while( boolVar )
+{
+	cout << "\nEnter your choice: ";
+	cin  >> choice;
+
+	//check choice for valid value from set {1,2,3}
+	//set boolVar to 'false' to exit the loop
+	if(choice>=1 && choice<=3)    boolVar=false;	 
+}
+
+//==============================================================
+//when constructing a switch in your program... the
+//first task is to validate the floe of execution.
+//I do this by constructing a skeleton switch structure
+//with print statements...shown as follows:
+  
+switch(choice)
+{
+	case AIR_CHOICE:
+		cout<<"\nAIR_CHOICE executes\n"; 
+		break;
+
+	case WATER_CHOICE: 
+		cout<<"\nWATER_CHOICE executes\n"; 
+		break;
+
+	case STEEL_CHOICE:
+		cout<<"\nSTEEL_CHOICE executes\n"; 
+		break;
+
+	//default: is not required because we have ensured that
+	//choice will only have a value from the set {1,2,3}
+	//before it enters the switch construct.
+
+}//endswitch
+
+//now verify that each case executes correctly
+
+//===============================================================
+
+//once the Execution Flow has been verfied -- begin to...
+//incrementally add code to each case one at a time.
+//Suggested Process:
+//1) add code for first case
+//2) test code for first case
+
+switch(choice)
+{
+	case AIR_CHOICE:
+      speed = AIR;
+      time = speed / distance;
+      cout << "\nA sound wave takes " 
+           << time << " seconds to travel " 
+           << distance << " feet through air.\n";
+	break;
+
+	case WATER_CHOICE: 
+		cout<<"\nWATER_CHOICE executes\n"; 
+			break;
+
+	case STEEL_CHOICE:
+		cout<<"\nSTEEL_CHOICE executes\n"; 
+			break;
+
+}//endswitch
+
+//===============================================================
+
+//once we have verified that the first case runs correctly ...
+
+//then we:
+//3) add code for second case
+//4) test code for second case
+
+switch(choice)
+{
+	case AIR_CHOICE:
+      speed = AIR;
+      time = speed / distance;
+      cout << "\nA sound wave takes " 
+           << time << " seconds to travel " 
+           << distance << " feet through air.\n";
+	break;
+
+	case WATER_CHOICE: 
+      speed = WATER;
+      time = speed / distance;
+      cout << "\nA sound wave takes " 
+           << time << " seconds to travel " 
+           << distance << " feet through water.\n";
+	break;
+
+	case STEEL_CHOICE:
+		cout<<"\nSTEEL_CHOICE executes\n"; 
+			break;
+
+}//endswitch
+
+//===============================================================
+
+//once we have verified that the second case runs correctly ...
+
+//then we will incrementally add & test the code for each of 
+//the remaining cases:
+
+switch(choice)
+{
+	case AIR_CHOICE:
+      speed = AIR;
+      time = speed / distance;
+      cout << "\nA sound wave takes " 
+           << time << " seconds to travel " 
+           << distance << " feet through air.\n";
+	break;
+
+	case WATER_CHOICE: 
+      speed = WATER;
+      time = speed / distance;
+      cout << "\nA sound wave takes " 
+           << time << " seconds to travel " 
+           << distance << " feet through water.\n";
+	break;
+
+	case STEEL_CHOICE:
+      speed = STEEL;
+      time = speed / distance;
+      cout << "\nA sound wave takes " 
+           << time << " seconds to travel " 
+           << distance << " feet through steel.\n";
+	break;
+
+}//endswitch
+
+//===============================================================
+//***************************************************************
+//LECTURE-EXAMPLE -- Menu Driven Programming
+//***************************************************************
+//COMPLETE EXAMPLE SOURCE CODE for doing PSET_6
+//***************************************************************
+//EXAMPLE 
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+// Constants for speeds (feet per second)
+const double AIR   =  1100;
+const double WATER =  4900;
+const double STEEL = 16400;
+
+// Constants for menu choices
+const int AIR_CHOICE   = 1;
+const int WATER_CHOICE = 2;
+const int STEEL_CHOICE = 3;
+
+//declare & initialize input variables
+int choice(0); 			// To hold a menu choice
+double distance(0);		// To hold the distance
+double speed(0);		   // To hold the speed
+
+//declare & initialize output variables
+double time(0);			// To hold the time
+
+//get & validate value for distance
+bool boolVar(true);
+while( boolVar )
+{
+	cout << "\nEnter value for distance: ";
+	cin  >> distance;
+
+	//check distance for valid value
+	//set boolVar to 'false' to exit the loop
+	if( distance > 0 )    boolVar=false;	 
+}
+
+// Display the menu for choices.
+cout << "Select a medium:\n"
+	 << "1. Air\n"
+	 << "2. Water\n"
+	 << "3. Steel\n\n";
+
+//get & validate value for choice
+boolVar=true;
+while( boolVar )
+{
+	cout << "\nEnter your choice: ";
+	cin  >> choice;
+
+	//check choice for valid value from set {1,2,3}
+	//set boolVar to 'false' to exit the loop
+	if(choice>=1 && choice<=3)    boolVar=false;	 
+}
+
+switch(choice)
+{
+	case AIR_CHOICE:
+      speed = AIR;
+      time = speed / distance;
+      cout << "\nA sound wave takes " 
+           << time << " seconds to travel " 
+           << distance << " feet through air.\n";
+		break;
+
+	case WATER_CHOICE: 
+      speed = WATER;
+      time = speed / distance;
+      cout << "\nA sound wave takes " 
+           << time << " seconds to travel " 
+           << distance << " feet through water.\n";
+			break;
+
+	case STEEL_CHOICE:
+      speed = STEEL;
+      time = speed / distance;
+      cout << "\nA sound wave takes " 
+           << time << " seconds to travel " 
+           << distance << " feet through steel.\n";
+	break;
+
+}//endswitch
+
+	return 0;
+}//endmain
+
+//end of example program  
+//***************************************************************
+
+
+
+
+
+
+

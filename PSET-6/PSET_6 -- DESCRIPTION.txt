@@ -1,0 +1,37 @@
+/**************************************************************************
+PSET_6 -- DESCRIPTION 
+***************************************************************************
+When sound travels through a gas, its speed depends primarily on the density of the medium. The less dense the medium, the faster the speed
+will be. The following table shows the approximate speed of sound at 0 degrees centigrade, measured in meters per second, when traveling through carbon dioxide, air, helium, and hydrogen.
+
+---------------------------------------------
+ Medium             Speed (Meters per Second)
+--------------      -------------------------
+Carbon Dioxide               258.0
+Air                          331.5
+Helium                       972.0
+Hydrogen                   1,270.0
+---------------------------------------------
+
+Write a program that displays a menu allowing the user to select one of these four gases. After a selection has been made, the user should enter 
+the number of seconds it took for the sound to travel in this medium from 
+its source to the location at which it was detected. 
+
+The program should then report how far away (in meters) the source of
+the sound was from the detection location.
+
+Input Validation: 
+Check that the user has selected one of the available menu choices.
+Do not accept times less than 0 seconds or more than 30 seconds.
+
+**************************************************************************/
+=======================================================================
+'Paste' your Console Dialog & Results from the Compiler Output Window
+and 'Paste' your Source Code from the Compiler Source Code Window into
+the "SUBMISSION TEMPLATE for PROGRAMMING SET 6" -- and SUBMIT into 
+CANVAS by the Due Date.
+
+You can Download a "SUBMISSION TEMPLATE for PROGRAMMING SET 6" from
+the WEEK_06 Course Module.
+=======================================================================
+=======================================================================
