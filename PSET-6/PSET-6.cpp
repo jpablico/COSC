@@ -24,7 +24,8 @@ int main() {
 	cout << endl;
 
 	switch(selection) {
-
+		case "A":  
+			break;
 	}
 	return 0;
 }
