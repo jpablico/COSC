@@ -32,7 +32,7 @@ int main() {
 		cin >> time;
 
 		if(time <= 0) {
-			cout << "Time is invalide." << endl;
+			cout << "Time is invalid." << endl;
 		} 
 		else if(time >= 1 && time <=30) {
 			switch (selection) {
@@ -54,12 +54,12 @@ int main() {
 					break;
 			}
 		} else {
-			cout << "Time is invalide." << endl;
+			cout << "Time is invalid." << endl;
 		}
 	} else if(selection == 5) {
 		return 0;
 	} else {
-		cout << "Please enter a valid option." << endl;
+		cout << "Invalid option, program terminating." << endl;
 	}
 	return 0;
 }
