@@ -1,0 +1,88 @@
+***************************************************************************
+ PSET_7  -- DESCRIPTION 
+***************************************************************************
+
+Write a program that generates a random number and asks the user to guess
+what the number is. If the user’s guess is higher than the random number, 
+the program should display “Too high, try again.” If the user’s guess is 
+lower than the random number, the program should display “Too low, try 
+again.” The program should use a while-loop that repeats until the user 
+correctly guesses the random number. Keep a count of the number of guesses
+that the user makes. When the user correctly guesses the random number,
+the program should display the number of guesses. 
+
+Lastly, place your code for the Guessing Game into a Game-Loop,
+(a boolean controlled while-loop) such that the user can be asked
+if he would like to play another game. When the response is 'yes',
+execute the Game Code otherwise 'exit' the Game-Loop.
+Your output dialog should look similar to the following:
+--------------------------------------------------------------------------
+******** BEGIN a GAME ********
+I'm thinking of a number. Can you
+guess what it is? 50
+No, that's too low.
+Guess again: 75
+Sorry, that's too high.
+Guess again: 62
+Sorry, that's too high.
+Guess again: 56
+Sorry, that's too high.
+Guess again: 53
+Sorry, that's too high.
+Guess again: 51
+No, that's too low.
+Guess again: 52
+Congratulations! You guessed it!
+I was thinking of the number 52.
+You got it right in 7 guesses.
+
+******** END OF a GAME ********
+
+Would you like to play another game ? ('y' or 'n'): y
+
+******** BEGIN a GAME ********
+I'm thinking of a number. Can you
+guess what it is? 50
+Sorry, that's too high.
+Guess again: 75
+Sorry, that's too high.
+Guess again: 62
+Sorry, that's too high.
+Guess again: 56
+Sorry, that's too high.
+Guess again: 53
+Sorry, that's too high.
+Guess again: 52
+Sorry, that's too high.
+Guess again: 51
+Sorry, that's too high.
+Guess again: 25
+Sorry, that's too high.
+Guess again: 12
+No, that's too low.
+Guess again: 18
+Sorry, that's too high.
+Guess again: 15
+Sorry, that's too high.
+Guess again: 13
+Congratulations! You guessed it!
+I was thinking of the number 13.
+You got it right in 12 guesses.
+
+******** END OF a GAME ********
+
+Would you like to play another game ? ('y' or 'n'): n
+
+--------------------------------------------------------------------------
+Demonstrate your program by playing at least 2 or 3 games.
+
+===================================================================
+'Paste' your Console Dialog & Results from the Compiler Output Window
+and 'Paste' your Source Code from the Compiler Source Code Window into
+the "SUBMISSION TEMPLATE for PROGRAMMING SET 7" -- and SUBMIT into 
+CANVAS by the Due Date.
+
+You can Download a "SUBMISSION TEMPLATE for PROGRAMMING SET 7" from
+the WEEK_07 Course Module.
+=======================================================================
+=======================================================================
