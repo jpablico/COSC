@@ -1,0 +1,43 @@
+***************************************************************************
+ PSET_8  -- DESCRIPTION 
+***************************************************************************
+Write a program to simulate the casino game "craps". 
+It should execute N number of games so that you can compute the
+probability(%) of the "player" winning and the "house" winning.
+
+Probability(%) of the "player" winning = PlayerWins / N * 100.
+
+Probability(%) of the "house" winning = HouseWins / N * 100.
+
+The rules are:
+
+Player rolls two dice.
+When the sum is 7 or 11 on first throw, player wins. Game over.
+When the sum is 2, 3, or 12 on first throw, "house" wins. Game over.
+
+When the sum is 4,5,6,8,9, or 10 on first throw,
+  that sum becomes the player's "point".
+Now, to win the player must continue rolling the dice until he
+matches "point" to win the game; however should he roll a 7 then the "house" wins.
+That concludes the game.
+
+Demonstrate your Program by:
+1) Playing 1,000,000 games.
+2) Count Number of Games Won by the Player.
+3) Count Number of Games Won by the House.
+4) Compute Percent Probability the Player Wins 
+5) Compute Percent Probability the House Wins 
+
+Report your results in the CONSOLE DIALOG & OUTPUT section of the
+"SUBMISSION TEMPLATE for PROGRAMMING SET 8".
+
+===================================================================
+'Paste' your Console Dialog & Results from the Compiler Output Window
+and 'Paste' your Source Code from the Compiler Source Code Window into
+the "SUBMISSION TEMPLATE for PROGRAMMING SET 8" -- and SUBMIT into 
+CANVAS by the Due Date.
+
+You can Download a "SUBMISSION TEMPLATE for PROGRAMMING SET 8" from
+the WEEK_08 Course Module.
+=======================================================================
+=======================================================================
