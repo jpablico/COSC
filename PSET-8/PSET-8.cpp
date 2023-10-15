@@ -9,8 +9,11 @@ int main() {
 
 	int gameCount = 0;
 	int numberOfGames;
+
 	int playerWins = 0;
 	int houseWins = 0;
+
+	
 	int gamePoint;
 	int diceRollCount = 0;
 
@@ -21,40 +24,29 @@ int main() {
 	cin >> numberOfGames;
 	cout << endl;
 
+	
 	while (gameCount != numberOfGames) {
 		int diceRoll = (rand() % 6) + (rand() % 6) + 2;
+		cout << diceRoll << endl;
 		diceRollCount++;
 
-		if (diceRoll == 7 || diceRoll == 11) {
-			playerWins++;
-		} else if (diceRoll == 2 || diceRoll == 3 || diceRoll == 12) {
-			
-		}
-	}
-	
 
+			if (diceRoll == 7 || diceRoll == 11) {
+				playerWins++;
+				gameCount++;
+			} else if (diceRoll == 2 || diceRoll == 3 || diceRoll == 12) {
+				houseWins++;
+				gameCount++;
+			} else {
+				gamePoint = diceRoll;
 
-
-	for (int i = 0; i <= numberOfGames; i++) {
-		int gameValue = 1;
-
-		int playerWins = 0;
-		
-
-
-		srand(time(0));
-		int diceOne = rand() % 5 + 1;
-		int diceTwo = rand() % 5 + 1;
-
-		int sumRoll = diceOne + diceTwo;
-
-		cout << "Dice one rolled a number of " << diceOne << endl;
-		cout << "Dice two rolled a number of " << diceTwo << endl;
-		cout << "The sum of the rolls are " << sumRoll << endl;
-
-		if (sumRoll == 7 || sumRoll == 11) {
-			playerWins++;
-		}
+				int gameSession = 1;
+				while (gameSession != 0) {
+					diceRoll;
+					cout << "New Dice roll " << diceRoll << endl;
+					gameSession = 0;
+				}
+			}
 	}
 
 	return 0;
