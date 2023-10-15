@@ -1,0 +1,124 @@
+CRAPS EXPLAINED PSEUDO CODE
+
+The Rules of the Game are:
+
+(1) Player rolls two dice.
+(2) When the sum is 7 or 11 on first throw, player wins.
+(3) When the sum is 2, 3, or 12 on first throw, "house" wins.
+(4) When the sum is 4,5,6,8,9, or 10 on first throw,
+      that sum becomes the player's "point".
+(5) Now, the player must continue rolling the dice
+      until he makes "point" to win; 
+      or should he roll a 7 then the "house" wins.
+
+(6) That concludes one game.
+
+========================================================================
+The Rules of the Game are the REQUIREMENTS for the Logic and Coding 
+a Computer Simulation of the Game. We want to implement the Rules
+for CRAPS into a C++ Program.
+
+//IMPORT C++ CODE LIBRARIES
+<iostream>    // For output display
+<cstdlib>     // For rand and srand
+<ctime>       // For the time function
+
+int main()
+{
+// Specifiy Number of Games (Played) for the Simulation
+
+// Variables for Accumulators numberOfWins & numberOfLosses  
+
+//We are going to use the C++ Random Generator
+//See my Lecture: Random Numbers
+
+// Get the system time to seed the Random Generator
+   unsigned seed = time(0);
+   
+// Seed the random number generator.
+// This creates a buffer and populates with
+// Random Numbers of unsigned short int. 
+// The rand() function will draw numbers from
+// this buffer.
+   srand(seed);
+
+
+ // Play a specified games for the Simulation
+ // Create Fundamental Game Loop to Drive the Simulation
+
+ // BEGIN GAME LOOP
+ int count(0);                    //init Loop Control Variable(CV)
+ while ( count != NumberOfGames)      //test CV
+ {
+ // *** START ONE GAME *** 
+ // RULE #1: Player rolls two dice.
+ // Simulate rolling the two dice, with values from 1-6
+    roll = (rand() % 6) + (rand() % 6) + 2;
+    
+	 
+ // Applying RULE #2  &  RULE #3	 
+ // Check for initial win or loss
+
+ // RULE #2: When the sum is 7 or 11 on first throw, player wins. 
+ if roll is 7 or 11
+     // End of ONE Game -- COUNT as a WIN
+ 
+ // RULE #3: When the sum is 2, 3, or 12 on first throw, "house" wins.
+ if roll is 2,3,12
+     // End of ONE Game -- COUNT as a LOSS
+
+ otherwise we apply
+ // RULE #4: When the sum is 4,5,6,8,9, or 10 on first throw,
+ //          that sum becomes the player's "point".  
+ 
+    //create variable point equal to last roll
+    
+    //create flag 'DONE' to signal end of game 
+
+    // RULE #5: The player must continue rolling the dice
+    //          until he makes "point" to win; 
+    //          or should he roll a 7 then the "house" wins.
+ 
+    // *** YOU ARE STILL IN THE GAME ***
+    //start loop
+    while NOT DONE 
+    {
+        // Continue rolling until we get the point or 7
+ 	
+        // Did we roll a 7 ??
+	if (YES)
+          // End of ONE Game -- COUNT as a LOSS
+	  
+        // Did we roll "point" ??
+	if (YES)
+           // End of ONE Game -- COUNT as a WIN		
+
+        otherwise
+
+        // We did not roll "point" or 7 !!
+        // We are still in the GAME.
+        // Continue rolling until we get the "point" or 7
+
+           //ROLL AGAIN
+           continue;
+       
+        // RULE #6: Signal when Game Over
+        // check if game is over
+        if point or 7 is rolled
+          then set flag 'DONE' to be true 
+    // end loop
+  }//end of ONE GAME
+
+     // update count
+     // go to the next game
+
+ //end of Game Loop (Simulation)
+
+} // end main
+
+
+
+
+
+
+
