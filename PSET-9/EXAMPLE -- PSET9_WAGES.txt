@@ -1,0 +1,81 @@
+//PSET9_Wages
+// Programming with Functions
+// Function Definitions
+#include <iostream>
+using namespace std;
+
+// business rules
+const int MIN_HRS(0);
+const int MAX_HRS(60);
+const int STD_HRS(40);
+
+const double MIN_RATE(7.50);
+const double MAX_RATE(18.00);
+
+bool validHours( int h )      // helper predicate function
+{
+   return h>=MIN_HRS && h<=MAX_HRS;
+}
+
+int  getHours()               // return by value
+{
+   int h;
+
+   do
+   {
+      cout<<"hrs?  ";
+      cin >>h;
+   }
+   while( ! validHours(h)  );
+
+   return h;
+}
+
+bool validRate( double r )      // predicate function
+{
+   return r>=MIN_RATE && r<=MAX_RATE;
+}
+
+void getRate( double& r )       // direct access by reference
+{
+   do
+   {
+      cout<<"rate?  ";
+      cin >>r;
+   }
+   while( ! validRate(r)  );
+
+}
+
+double computeWages(int h, double r)
+{
+   double w(0);
+
+   if( h <= STD_HRS )
+      w = r * h;
+   else
+      w = STD_HRS * r + 1.5 * r * (h - STD_HRS);
+
+   return w;
+}//        )
+
+//*********************************************************
+// Application  
+//Function definitions are defined before main() .
+
+void main()
+{
+// declare variable
+   int    hrs(0);                
+   double rate(0);
+ 
+   hrs = getHours();          // return by value
+   cout<<"hrs = "<<hrs<<endl; //input/validate hours
+
+   getRate( rate );             // direct access by reference
+   cout<<"rate = "<<rate<<endl; //input/validate rate
+
+   cout << "wages = "<< computeWages(hrs, rate) <<endl;   
+
+}//main
+
