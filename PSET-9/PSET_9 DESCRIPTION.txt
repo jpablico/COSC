@@ -1,0 +1,73 @@
+***************************************************************************
+  PSET_9  DESCRIPTION
+***************************************************************************
+===========================================================================
+  PROBLEM SCENARIO -- BACKGROUND INFORMATION
+===========================================================================
+
+An Internet Service Provider(ISP) has three different subscription 
+packages for its customers:
+
+   Package A:  For $15 per month with 50 hours of access provided.
+               Additional hours are $2.00 per hour over 50 hours.
+               Assume usage is recorded in one-hour increments, 
+               
+
+   Package B:  For $20 per month with 100 hours of access provided.
+               Additional hours are $1.50 per hour over 100 hours.
+               
+
+   Package C:  For $25 per month with 150 hours access is provided.
+	       Additional hours are $1.00 per hour over 150 hours
+
+Assume the Billing Cycle is 30 days.
+
+The ISP has contracted us to write the application softare for their
+new Billing System. 
+
+We will do the project over the next two weeks:
+
+WEEK  9 -- Write the Functions to do the tasks that we will be using
+           to develop the application in Week 10.
+WEEK 10 -- Write an Interactive Console Application using the
+           Functions which you developed in Week 9. 
+
+===========================================================================
+  DESCRIPTION of PROBLEM SET for Week 9
+===========================================================================
+ 
+Write the Function Definitions for the following tasks needed by
+the ISP Billing System.
+ 
+         getPackage
+         validPackage
+         getHours
+         validHours
+         calculatePkg_A
+         calculatePkg_B
+         calculatePkg_C
+---------------------------------------------------------------------------
+getPackage: get value (A, B, C) for selected package from the keyboard.
+
+validPackage: ensure that the value entered is an (A,B,C).
+
+getHours: get value (0 - 720) for hours of usage from the keyboard.         
+ 
+validHours: ensure that the value entered is between 0 and 720.
+
+calculatePkg_A: calculates the monthly charges for internet usage
+                based on hours of usage when Package 'A' is selected. 
+
+HINT: Study my Tutorials on How to Create these Functions
+
+Be sure to thoroughly test your functions to ensure that they will
+give the correct results. Remember, you are going to be using these
+functions to develop your application next week.
+===================================================================
+'Paste' your Source Code from the Compiler Source Code Window into
+the "SUBMISSION TEMPLATE for PROGRAMMING SET 9" -- and SUBMIT into 
+CANVAS by the Due Date: MARCH 31.
+
+You can Download a "SUBMISSION TEMPLATE for PROGRAMMING SET 9" from
+the WEEK_09 Course Module.
+=======================================================================     
