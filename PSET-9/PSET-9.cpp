@@ -33,6 +33,8 @@ bool validPackage(string packageSelection) {
 int getHours(int hours) {
 	cout << "Please enter the amount of hours: ";
 	cin >> hours;
+
+	return hours;
 }
 
 bool validHours(int hours) {
@@ -43,14 +45,15 @@ double calculatePkg_A(int hours) {
 	double basePrice = 15.00;
 
 	if ( hours <= 50) {
+		cout << basePrice;
 		return basePrice;
 	} else if ( hours > 50) {
 		int additionalHours = hours - 50;
 		int newPrice = additionalHours * 2;
-
-		return basePrice + newPrice;
+		
+		cout << (basePrice + newPrice);
+		return (basePrice + newPrice);
 	}
-
 }
 
 double calculatePkg_B() {
@@ -64,6 +67,10 @@ double calculatePkg_C() {
 int main() {
 	getPackage();
 	validPackage(packageSelection);
-	cout << validPackage(packageSelection);
+	getHours(hours);
+	validHours(hours);
+
+	calculatePkg_A(hours);
+
 	return 0;
 }
