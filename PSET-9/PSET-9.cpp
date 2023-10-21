@@ -39,6 +39,28 @@ bool validHours(int hours) {
 	return hours>=MIN_HOURS && hours <=MAX_HOURS;
 }
 
+double calculatePkg_A(int hours) {
+	double basePrice = 15.00;
+
+	if ( hours <= 50) {
+		return basePrice;
+	} else if ( hours > 50) {
+		int additionalHours = hours - 50;
+		int newPrice = additionalHours * 2;
+
+		return basePrice + newPrice;
+	}
+
+}
+
+double calculatePkg_B() {
+
+}
+
+double calculatePkg_C() {
+
+}
+
 int main() {
 	getPackage();
 	validPackage(packageSelection);
