@@ -42,26 +42,39 @@ bool validHours(int hours) {
 }
 
 double calculatePkg_A(int hours) {
-	double basePrice = 15.00;
+    double basePrice = 15.00;
 
-	if ( hours <= 50) {
-		cout << basePrice;
+    if (hours <= 50) {
+        return basePrice;
+    } else {
+        int additionalHours = hours - 50;
+        double newPrice = basePrice + (additionalHours * 2.00);
+        return newPrice;
+    }
+}
+
+double calculatePkg_B(int hours) {
+	double basePrice = 20.00;
+
+	if (hours <= 100) {
 		return basePrice;
-	} else if ( hours > 50) {
-		int additionalHours = hours - 50;
-		int newPrice = additionalHours * 2;
-		
-		cout << (basePrice + newPrice);
-		return (basePrice + newPrice);
+	} else {
+		int additionalHours = hours - 100;
+		double newPrice = basePrice + (additionalHours * 1.50);
+		return newPrice;
 	}
 }
 
-double calculatePkg_B() {
+double calculatePkg_C(int hours) {
+	double basePrice = 25.00;
 
-}
-
-double calculatePkg_C() {
-
+	if (hours <= 150) {
+		return basePrice;
+	} else {
+		int additionalHours = hours - 150;
+		double newPrice = basePrice + (additionalHours * 1.00);
+		return newPrice;
+	}
 }
 
 int main() {
