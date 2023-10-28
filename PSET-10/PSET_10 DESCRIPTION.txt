@@ -1,0 +1,62 @@
+***************************************************************************
+  PSET_10  DESCRIPTION   Programming with Functions
+***************************************************************************
+
+An Internet Service Provider(ISP) has three different subscription 
+packages for its customers:
+
+   Package A:  For $15 per month with 50 hours of access provided.
+               Additional hours are $2.00 per hour over 50 hours.
+               Assume usage is recorded in one-hour increments, 
+               
+
+   Package B:  For $20 per month with 100 hours of access provided.
+               Additional hours are $1.50 per hour over 100 hours.
+               
+
+   Package C:  For $25 per month with 150 hours access is provided.
+	       Additional hours are $1.00 per hour over 150 hours
+
+Assume the Billing Cycle is 30 days.
+
+The ISP has contracted us to write the application softare for their
+new Billing System. 
+
+Recall that in WEEK 9 we wrote the following Functions to do the tasks:
+         getPackage
+         validPackage
+         getHours
+         validHours
+         calculatePkg_A
+         calculatePkg_B
+         calculatePkg_C
+which we will use to develop the application in Week 10.
+
+For WEEK 10 we need to write an Interactive Console Application
+using the Functions which you developed in Week 9. 
+
+Write a Console Dialog Application in the main() function.
+You will need to display a menu. The Input processing should only
+be done using functions: getPackage, validPackage, getHours, 
+validHours, and program control constructs.
+The Calculation Processing should only be done using functions:   
+calculatePkg_A, calculatePkg_B, calculatePkg_C, and program control constructs.
+For Output Results you should display the Package Selected, Hours of
+Usage, and the Amount charged for the month.
+
+      Demonstrate test cases as described in table:
+   
+     Test Case        Package             Hours
+	1		a		 70
+	2		b		140
+	3		c		220	
+
+===================================================================
+'Paste' your Console Dialog & Results from the Compiler Output Window
+and 'Paste' your Source Code from the Compiler Source Code Window into
+the "SUBMISSION TEMPLATE for PROGRAMMING SET 10" -- and SUBMIT into 
+CANVAS by the Due Date: Wed April 7.
+
+You can Download a "SUBMISSION TEMPLATE for PROGRAMMING SET 10 from
+the WEEK_10 Course Module.
+=======================================================================     
