@@ -1,0 +1,28 @@
+***************************************************************************
+  PSET_11  DESCRIPTION   Programming with Arrays
+***************************************************************************
+Write a program that creates an an array large enough to hold 200 test scores between 55 and 99. Use a Random Number to populate the array.
+Then do the following:
+
+ 1) Sort scores in ascending order.
+ 2) List your scores in rows of ten(10) values.
+ 3) Calculate the Mean for the distribution.
+ 4) Calculate the Variance for the distribution.
+ 5) Calculate the Median for the distribution.
+
+Display your results.
+
+
+===========================================================================
+'Paste' your Console Dialog & Results from the Compiler Output Window
+and 'Paste' your Source Code from the Compiler Source Code Window into
+the "SUBMISSION TEMPLATE for PROGRAMMING SET 11" -- and SUBMIT into 
+CANVAS by the Due Date: Wed April 14.
+
+You can Download a "SUBMISSION TEMPLATE for PROGRAMMING SET 11 from
+the WEEK_11 Course Module.
+=========================================================================== 
+
+
+
+    
