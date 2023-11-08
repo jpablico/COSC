@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/wimllie/Developer/COSC/PSET-4",
-      "program": "/Users/wimllie/Developer/COSC/PSET-4/build/Debug/outDebug"
+      "cwd": "/Users/wimllie/Developer/COSC/PSET-9",
+      "program": "/Users/wimllie/Developer/COSC/PSET-9/build/Debug/outDebug"
     }
   ]
 }
