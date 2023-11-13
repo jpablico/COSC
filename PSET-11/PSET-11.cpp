@@ -83,7 +83,7 @@ int main() {
 
 	printArray();
 
-	cout << "The average of the distribution in the array is: " << mean << endl;
+	cout << "The mean of the distribution in the array is: " << mean << endl;
 	cout << "The varience of the distribution in the array is: " << varience << endl;
 	cout << "The median of the distribution in the array is: " << median << endl;
 	return 0;
