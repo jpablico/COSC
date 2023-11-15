@@ -1,0 +1,46 @@
+***************************************************************************
+ PSET_12  --  DESCRIPTION - POINTERS
+***************************************************************************
+
+Write a program that dynamically allocates an array, on the Heap, large enough to hold 200 test scores between 55 and 99 -- using a Random Number generator to populate the array. Then do the following:
+
+ 1) Sort scores in ascending order.
+ 2) List your scores in rows of ten(10) values.
+ 3) -- Write algorithm to determine the number of scores in
+       each of the discrete intervals specified below:
+    -- Display list of the number of scores in each interval.
+    -- Display your Histogram Chart distribution to
+       the Console screen.
+
+EXAMPLE HISTOGRAM:
+
+(score intervals)
+    55-59|**
+    60-64|***
+    65-69|*****
+    70-74|******
+    75-79|***********
+    80-84|****
+    85-89|***
+    90-94|**
+    95-99|*
+         |----|----|----|----|----|----|----|----| 
+         0    5    10   15   20   25   30   35   40
+             (number of values in an interval)
+
+HINT: Dynamically allocating an array, on the Heap, that is in
+      the Dynamic Memory region requires using pointers for
+      access to the data values. 
+
+===========================================================================
+'Paste' your Console Dialog & Results from the Compiler Output Window
+and 'Paste' your Source Code from the Compiler Source Code Window into
+the "SUBMISSION TEMPLATE for PROGRAMMING SET 12" -- and SUBMIT into 
+CANVAS by the Due Date: Sun April 25.
+
+You can Download a "SUBMISSION TEMPLATE for PROGRAMMING SET 12 from
+the WEEK_12 Course Module.
+=========================================================================== 
+
+
+     
