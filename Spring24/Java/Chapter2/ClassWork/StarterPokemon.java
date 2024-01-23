@@ -1,5 +1,6 @@
 package ClassWork;
 
+/*
 public class StarterPokemon {
 	public static void main(String[] args) {
 		String waterType = "Squirtle";
@@ -11,3 +12,4 @@ public class StarterPokemon {
 		System.out.println("The starter Pokemon that is a grass type is " + grassType + ".");
 	}
 }
+*/
