@@ -9,8 +9,22 @@ import javax.swing.JOptionPane;
 
 public class Lab2VarAndDiag {
 
-	public static void main(Strings[] args) {
-		String name; // To hold the user's name
-		String input; // To hold the user's input
+	public static void main(String[] args) {
+		String name;				 // To read the user's name
+		String inputString;		// To read the user's numerical inputs
+		int  age; 					 // To hold the user's age
+		int inputTemp;			    // To hold the user's input temporarily
+
+		// Get the User's name
+		name = JOptionPane.showInputDialog("What is a your character's name?");
+
+		// Get the User's age
+		inputString = JOptionPane.showInputDialog("What is your character's age?");
+
+		// Convert inputString to int age
+		age = Integer.parseInt(inputString);
+
+
+
 	}
 }
