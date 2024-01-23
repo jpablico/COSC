@@ -1,3 +1,4 @@
+package LabWork;
 import javax.swing.JOptionPane;
 
 	/*
