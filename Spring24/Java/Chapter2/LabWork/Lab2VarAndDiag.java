@@ -1,10 +1,10 @@
 package LabWork;
 import javax.swing.JOptionPane;
 
-	/*
-	 * This program demonstrates the use of variables and dialog boxes with JOptionPane.
-	 * Author: Josh Pablico
-	 * Section: COSC-1437.200
+	/**
+	 This program demonstrates the use of variables and dialog boxes with JOptionPane.
+	 Author: Josh Pablico
+	 Section: COSC-1437.200
 	 */
 
 public class Lab2VarAndDiag {
