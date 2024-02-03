@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "HPBattle",
+      "request": "launch",
+      "mainClass": "Lab3MenuDriven.HPBattle",
+      "projectName": "COSC_203ef2cf"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "lldb",
       "request": "launch",
