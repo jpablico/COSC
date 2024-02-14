@@ -1,0 +1,4 @@
+*** Mood Results ***
+Happy days: 33 37.50%
+Neutral days: 29 32.95%
+Sad days: 26 29.55%
