@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Lab4b {
 	static Scanner kbd = new Scanner(System.in);
 	static int filchLocation = 10;
+
 	public static void main(String[] args) {
 		System.out.println("");
 		System.out.println("The Weasley brothers hand you some floo powder and quickly push you into the fireplace");
@@ -25,7 +26,6 @@ public class Lab4b {
 		flyingCreatures();
 		blockedStairwell();
 	}
-
 
 	// Method to unlock the door
 	public static boolean unlockDoor() {
@@ -79,54 +79,70 @@ public class Lab4b {
 				System.out.println("");
 				System.out.println("The creatures freeze in place and you quickly make your way past them");
 				System.out.println("You're getting closer to the common room! (Press enter to continue)");
-				kbd.nextLine();
-				creaturesGone = true;
-				return true;
+					kbd.nextLine();
+						creaturesGone = true;
+							return true;
 			} else if(spellCast(randomNumber()) == "Wingardium Leviosa") {
 				System.out.println("");
 				System.out.println("The billiwigs are already flying, if you cast the wrong spell, they'll attack you");
 				System.out.println("Filch hears the commotion and he makes his way towards your direction");
 				castleCaretaker();
 				System.out.println(" Try again! (Press enter to cast another spell)");
-				kbd.nextLine();
-				creaturesGone = false;
+					kbd.nextLine();
+						creaturesGone = false;
 			} else if(spellCast(randomNumber()) == "Alohomora") {
 				System.out.println("");
 				System.out.println("The creatures are already flying, if you cast the wrong spell, they'll attack you");
 				System.out.println("Filch hears the commotion and he makes his way towards your direction");
 				castleCaretaker();
 				System.out.println(" Try again! (Press enter to cast another spell)");
-				kbd.nextLine();
-				creaturesGone = false;
+					kbd.nextLine();
+						creaturesGone = false;
 			}
 		}
-		
-		return creaturesGone;
+		System.out.println("");
+		System.out.println("The Spell worked! You make your way across the room and quickly close the door behind you");
+		System.out.println("You're getting closer to the common room! (Press enter to continue)");
+		kbd.nextLine();
 	}
 
 	public static boolean blockedStairwell() {
 		System.out.println("");
-		System.out.println("You make your way through the castle, you see a stairwell that's blocked by a group of pixies");
-		System.out.println("You need to cast a spell to get them to leave you alone");
+		System.out.println("You make your way through the castle, you see a stairwell that's blocked by a fallen stand of armor");
+		System.out.println("You need to cast a spell to get it of the way");
 		System.out.println("You need to cast the levitation charm, Wingardium Leviosa (Press enter to cast the spell)");
 		kbd.nextLine();
 		boolean stairwellUnblocked = false;
 		while(!stairwellUnblocked) {
 			if(spellCast(randomNumber()) == "Wingardium Leviosa") {
 				System.out.println("");
-				System.out.println("The pixies are levitated and you quickly make your way past them");
-				System.out.println("You're getting closer to the common room! (Press enter to continue)");
-				kbd.nextLine();
-				stairwellUnblocked = true;
-				return true;
-			} 
-			System.out.println("");
-			System.out.println("The spell didn't work, you casted the wrong spell, filch hears you and he makes his way towards your direction");
-			castleCaretaker();
-			System.out.println("You'll need to try again, but you need to be quick, Filch is getting closer (Press enter to cast the spell)");
-			kbd.nextLine();
+				System.out.println("The stand of armor are levitated up and you quickly make your way past it");
+				System.out.println("You're just about the enterance of the common room! (Press enter to continue)");
+					kbd.nextLine();
+						stairwellUnblocked = true;
+							return true;
+			} else if(spellCast(randomNumber()) == "Immobulus") {
+				System.out.println("");
+				System.out.println("The armor is already frozen in place, if you cast the wrong spell");
+				System.out.println("Filch hears the commotion and he makes his way towards your direction");
+				castleCaretaker();
+				System.out.println(" Try again! (Press enter to cast another spell)");
+					kbd.nextLine();
+						stairwellUnblocked = false;
+			} else if(spellCast(randomNumber()) == "Alohomora") {
+				System.out.println("");
+				System.out.println("That's not the right spell, the armor remains in place");
+				System.out.println("Filch hears the commotion and he makes his way towards your direction");
+				castleCaretaker();
+				System.out.println(" Try again! (Press enter to cast another spell)");
+					kbd.nextLine();
+						stairwellUnblocked = false;
+			}
 		}
-		return stairwellUnblocked;
+		System.out.println("");
+			System.out.println("You've made it to the common room! You're safe for now! (Press enter to continue)");
+				kbd.nextLine();
+					System.out.println("Congratulations! You've won the game!");
 	}
 
 	// Method for Filch's movement in the castle
