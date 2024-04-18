@@ -8,6 +8,6 @@ public class Elf extends Hero {
 
     @Override
     public String toString() {
-        return "Type: " + getType() + ", Name: " + getName() + ", Bow Type: " + bowType;
+        return "The half-" + getType() + ", " + getName() + ", wielding her " + bowType + " with deadly accuracy.";
     }
 }

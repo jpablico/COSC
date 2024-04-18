@@ -8,6 +8,6 @@ public class Wizard extends Hero {
 
     @Override
     public String toString() {
-        return "Type: " + getType() + ", Name: " + getName() + ", Robe Color: " + robeColor;
+        return "The great " + getType() + ", " + getName() + ", in his lavish " + robeColor + " robe.";
     }
 }

@@ -8,6 +8,6 @@ public class Dwarf extends Hero {
 
     @Override
     public String toString() {
-        return "Type: " + getType() + ", Name: " + getName() + ", Weapon Type: " + weaponType;
+        return "The mighty " + getType() + ", "+ getName() + ", brandishing his " + weaponType + " with unmatched strength.";
     }
 }
