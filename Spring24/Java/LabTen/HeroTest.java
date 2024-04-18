@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.*;
 
-public class HeroTester {
+public class HeroTest {
 
     public static void main(String[] args) {
         ArrayList<Hero> heroes = new ArrayList<>();
