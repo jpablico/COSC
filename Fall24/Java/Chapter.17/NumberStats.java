@@ -8,7 +8,7 @@ public class NumberStats<T extends Number & Comparable<T>> {
     public T getMax() {
         T max = numbers[0];
         for (T number : numbers) {
-            if (((Number) number).doubleValue() > ((Number) max).doubleValue()) {
+            if (number.doubleValue() > max.doubleValue()) {
                 max = number;
             }
         }
@@ -18,7 +18,7 @@ public class NumberStats<T extends Number & Comparable<T>> {
     public T getMin() {
         T min = numbers[0];
         for (T number : numbers) {
-            if (((Number) number).doubleValue() < ((Number) min).doubleValue()) {
+            if (number.doubleValue() < min.doubleValue()) {
                 min = number;
             }
         }
@@ -28,7 +28,7 @@ public class NumberStats<T extends Number & Comparable<T>> {
     public double getTotal() {
         double total = 0;
         for (T number : numbers) {
-            total += ((Number) number).doubleValue();
+            total += number.doubleValue();
         }
         return total;
     }
