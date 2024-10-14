@@ -1,13 +1,13 @@
-public class NumberStats<T extends Number & Comparable<T>> {
-    private T[] numbers;
+public class NumberStats<NUM extends Number & Comparable<NUM>> {
+    private NUM[] numbers;
 
-    public NumberStats(T[] numbers) {
+    public NumberStats(NUM[] numbers) {
         this.numbers = numbers;
     }
 
-    public T getMax() {
-        T max = numbers[0];
-        for (T number : numbers) {
+    public NUM getMax() {
+        NUM max = numbers[0];
+        for (NUM number : numbers) {
             if (number.doubleValue() > max.doubleValue()) {
                 max = number;
             }
@@ -15,9 +15,9 @@ public class NumberStats<T extends Number & Comparable<T>> {
         return max;
     }
 
-    public T getMin() {
-        T min = numbers[0];
-        for (T number : numbers) {
+    public NUM getMin() {
+        NUM min = numbers[0];
+        for (NUM number : numbers) {
             if (number.doubleValue() < min.doubleValue()) {
                 min = number;
             }
@@ -27,7 +27,7 @@ public class NumberStats<T extends Number & Comparable<T>> {
 
     public double getTotal() {
         double total = 0;
-        for (T number : numbers) {
+        for (NUM number : numbers) {
             total += number.doubleValue();
         }
         return total;
@@ -38,7 +38,7 @@ public class NumberStats<T extends Number & Comparable<T>> {
     }
 
     public static void main(String[] args) {
-        Integer[] intArray = {1, 2, 3, 4, 5};
+        Integer[] intArray = {1, 4, 2, 4, 7};
         NumberStats<Integer> intStats = new NumberStats<>(intArray);
         System.out.println("Integer Array:");
         System.out.println("Max: " + intStats.getMax());
