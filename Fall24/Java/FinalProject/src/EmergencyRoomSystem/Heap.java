@@ -1,5 +1,3 @@
-package EmergencyRoomSystem;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 
