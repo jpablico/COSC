@@ -7,8 +7,7 @@ public class EmergencyRoom {
         this.priorityQueue = priorityQueue;
     }
 
-    public void checkIn(Patient patient, Severity severity) {
-        patient.setSeverity(severity);
+    public void checkIn(Patient patient) {
         patient.setArrivalTime(LocalTime.now());
         priorityQueue.add(patient);
     }
