@@ -40,6 +40,10 @@ public class Patient {
 
   @Override
   public String toString() {
-    return name + " (DOB: " + dob + ", Severity: " + severity + ", Arrival Time: " + arrivalTime + ")";
+    return "Patient Details:\n" +
+           "Name: " + name + "\n" +
+           "DOB: " + dob + "\n" +
+           "Severity: " + severity + "\n" +
+           "Arrival Time: " + arrivalTime + "\n";
   }
 }

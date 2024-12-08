@@ -36,7 +36,7 @@ public class Heap<T> implements PriorityQueue<T> {
     T lastElement = heap.remove(heap.size() - 1);
 
     if (!heap.isEmpty()) {
-      heap.set(0, heap.get(heap.size() - 1));
+      heap.set(0, lastElement);
       int index = 0;
 
       while(true) {

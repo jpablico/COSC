@@ -15,7 +15,7 @@ public class EmergencyRoomTest {
         System.out.println("\nAdmitting patients:");
         Patient patient;
         while ((patient = eRoom.admit()) != null) {
-            System.out.println(patient + " admitted");
+            System.out.println(patient + "Admitted \n");
         }
     }
 }
